@@ -1,0 +1,48 @@
+
+.fabric-shrinkage-calculator {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_and_washType {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.input_and_washType input, .input_and_washType select {
+    width: 45%;
+}
+
+.increase-decrease {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.increase-decrease select {
+    width: 80%;
+    margin: auto;
+}
+
+.Square-Container {
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+    display: grid;
+    place-content: center;
+  }
+
+  .Square {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #AWSquare {
+    z-index: 1; /* Coloca el cuadro rojo encima del cuadro azul */
+  }
+
+  .BWinputs, .AWinputs {
+    margin-bottom: 10px;
+  }

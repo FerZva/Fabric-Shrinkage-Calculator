@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabric Shrinkage Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main id="fabric-shrinkage-calculator">
+        <div class="title">
+          <h2>Fabric Shrinkage Calculator</h2>
+        </div>
+        <div class="input_and_washType">
+            <input type="text" id="fabricInput" placeholder="Enter fabric">
+      
+            <select id="WashType" name="WashType">
+                <option value="default">Select Wash Type</option>
+                <option value="raw-wash">Raw Wash</option>
+                <option value="stone-wash">Stone Wash</option>
+                <option value="mineral-wash">Mineral Wash</option>
+                <option value="vintage-wash">Vintage Wash</option>  ----
+                <option value="acid-wash">Acid Wash</option>
+                <option value="snow-wash">Snow Wash</option>
+                <option value="enzyme-wash">Enzyme Wash</option>
+                <option value="sand-wash">Sand Wash</option>
+                <option value="Silicone-wash">Silicone Wash</option>
+                <option value="bleach-wash">Bleach Wash</option>
+                <option value="destroy-wash">Destroy Wash</option>
+                <option value="whiskers">Whiskers</option>
+                <option value="spray-Stone-wash">Spray Stone Wash</option>
+                <option value="pigment-dyed-wash">Pigment Dyed Wash</option>
+                <option value="wrapping up">Wrapping Up</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+      
+        
+        <div class="increase-decrease">
+            <select id="fabric" name="fabric">
+                <option value="Increase">Fabric % Increase</option>
+                <option value="Decrease">Fabric % Decrease</option>
+              </select>
+        </div>
+      
+        <div class="BWinputs">
+          <label for="BWSquareWidth">BW Square Width</label>
+          <input type="text" id="BWSquareWidth" name="BWSquareWidth" placeholder="">
+      
+          <label for="BWSquareLength">BW Square Length</label>
+          <input type="text" id="BWSquareLength" name="BWSquareLength" placeholder="">
+        </div>
+      
+        <div class="AWinputs">
+          <label for="AWSquareWidth">AW Square Width</label>
+          <input type="text" id="AWSquareWidth" name="AWSquareWidth" placeholder="">
+      
+          <label for="AWSquareLength">AW Square Length</label>
+          <input type="text" id="AWSquareLength" name="AWSquareLength" placeholder="">
+        </div>
+      
+        <div class="Square-Container">
+          <div class="Square" id="BWSquare"></div>
+          <div class="Square" id="AWSquare"></div>
+        </div>
+      
+        <div>
+          <button onclick="clearFields()">Clear</button>
+          <button onclick="calculateAndDrawSquare()">Calculate</button>
+          <!-- <button onclick="printSquare()">Print</button>
+          <button onclick="previewSquare()">Preview</button> -->
+        </div>      
+      </main>
+</body>
+</html>
