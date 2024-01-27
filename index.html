@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <main id="fabric-shrinkage-calculator">
+    <main id="fabric-shrinkage-calculator" class="fabric-shrinkage-calculator">
         <div class="title">
           <h2>Fabric Shrinkage Calculator</h2>
         </div>
@@ -45,20 +45,30 @@
               </select>
         </div>
       
-        <div class="BWinputs">
-          <label for="BWSquareWidth">BW Square Width</label>
-          <input type="text" id="BWSquareWidth" name="BWSquareWidth" placeholder="">
-      
-          <label for="BWSquareLength">BW Square Length</label>
-          <input type="text" id="BWSquareLength" name="BWSquareLength" placeholder="">
-        </div>
-      
-        <div class="AWinputs">
-          <label for="AWSquareWidth">AW Square Width</label>
-          <input type="text" id="AWSquareWidth" name="AWSquareWidth" placeholder="">
-      
-          <label for="AWSquareLength">AW Square Length</label>
-          <input type="text" id="AWSquareLength" name="AWSquareLength" placeholder="">
+        <div class="main-input-container">
+          <div class="BWinputs">
+            <div class="input-container">
+              <label for="BWSquareWidth">BW Square Width</label>
+              <input type="text" id="BWSquareWidth" name="BWSquareWidth" placeholder="">
+            </div>
+        
+            <div class="input-container">
+              <label for="BWSquareLength">BW Square Length</label>
+              <input type="text" id="BWSquareLength" name="BWSquareLength" placeholder="">
+            </div>
+          </div>
+        
+          <div class="AWinputs">
+            <div class="input-container">
+              <label for="AWSquareWidth">AW Square Width</label>
+              <input type="text" id="AWSquareWidth" name="AWSquareWidth" placeholder="">
+            </div>
+        
+            <div class="input-container">
+              <label for="AWSquareLength">AW Square Length</label>
+              <input type="text" id="AWSquareLength" name="AWSquareLength" placeholder="">
+            </div>
+          </div>
         </div>
       
         <div class="Square-Container">

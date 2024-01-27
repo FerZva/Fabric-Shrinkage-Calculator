@@ -1,9 +1,16 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  
+}
 
 .fabric-shrinkage-calculator {
-    width: 100%;
-    margin: auto;
+    text-align: center;
+    background-color: darkgray;
     display: flex;
     flex-direction: column;
+    background-color: beige;
 }
 
 .input_and_washType {
@@ -23,6 +30,28 @@
 .increase-decrease select {
     width: 80%;
     margin: auto;
+}
+
+.main-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-input-container input {
+  height: 20px;
+}
+
+.BWinputs .input-container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.AWinputs .input-container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .Square-Container {
